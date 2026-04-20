@@ -8,15 +8,15 @@ Este proyecto es un trabajo de la asignatura **Aplicaciones Sectoriales (APSE)**
 - **artifacts/**: Pesos, checkpoints y predicciones generadas por los modelos.
 - **images/**: Figuras y esquemas utilizados en los notebooks e informe.
 
-- **informe.pdf**: Documento principal del informe en LaTeX.
+- **[informe.pdf](informe.pdf)**: Documento principal del informe en LaTeX.
 - **utils.py**: Funciones auxiliares y utilidades comunes.
 
-- **EDA.ipynb**: Análisis exploratorio de datos (EDA) detallado.
-- **rf.ipynb**: Notebook para el modelo Random Forest.
-- **cnn1d.ipynb**: Notebook para el modelo CNN 1D y CNN 1D + LSTM.
-- **transformer.ipynb**: Notebook para el modelo Transformer.
-- **cnn.ipynb**: Notebook para el modelo CNN dual-stream.
-- **global_metrics.ipynb**: Notebook para el análisis de métricas globales y comparación de modelos.
+- **[EDA.ipynb](EDA.ipynb)**: Análisis exploratorio de datos (EDA) detallado.
+- **[rf.ipynb](rf.ipynb)**: Notebook para el modelo Random Forest.
+- **[cnn1d.ipynb](cnn1d.ipynb)**: Notebook para el modelo CNN 1D y CNN 1D + LSTM.
+- **[transformer.ipynb](transformer.ipynb)**: Notebook para el modelo Transformer.
+- **[cnn.ipynb](cnn.ipynb)**: Notebook para el modelo CNN dual-stream.
+- **[global_metrics.ipynb](global_metrics.ipynb)**: Notebook para el análisis de métricas globales y comparación de modelos.
 
 ## Uso de los notebooks
 
