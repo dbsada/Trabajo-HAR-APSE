@@ -1,7 +1,7 @@
 # Reconocimiento de Actividades con Acelerómetro
 
-> ### 🥇 Proyecto ganador de la competición de APSE.
-> ![Resultados](images/results.jpeg)
+### 🥇 Proyecto ganador de la competición de APSE.
+![Resultados](images/results.jpeg)
 
 Este proyecto es un trabajo de la asignatura **Aplicaciones Sectoriales (APSE)** que aborda la clasificación automática de actividades físicas a partir de señales inerciales registradas con un acelerómetro triaxial. El objetivo es comparar distintos enfoques de modelado, desde métodos clásicos hasta arquitecturas profundas, evaluando su capacidad para generalizar a sujetos no vistos durante el entrenamiento.
 
