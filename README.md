@@ -41,4 +41,4 @@ pip install -r requirements.txt
 ```
 
 ## Autores
-Antonio Álvarez, Diego Besada, Natalia Corchón y Alfonso Jimena
+Antonio Álvarez, Diego Besada, Natalia Corchón y Alfonso Jimena Ruiz
