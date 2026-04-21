@@ -4,6 +4,15 @@ Este proyecto es un trabajo de la asignatura **Aplicaciones Sectoriales (APSE)**
 
 ## Estructura del proyecto
 
+> [!Warning]
+> Durante la realización de la práctica se interpretó erróneamente que el eje Z representaba la altura. Sin embargo, era el eje Y el que tenía este significado. Esto afecta al modelo [cnn.ipynb](cnn.ipynb) y, para solucionarlo, se debe modificar la función `get_height_signal_z_only` ubicada en el notebook:
+> ```
+> h_z = get_height_signal_z_only(z, fs)
+> # cambiar por:
+> h_y = get_height_signal_y_only(y, fs)
+> ```
+> Este cambio no se ha implementado, ya que requeriría modificaciones en múltiples partes del código y el informe, y el proyecto se ha considerado finalizado en su estado actual.
+
 - **data/**: Contiene los archivos `train.csv` y `test.csv` con los datos originales.
 - **artifacts/**: Pesos, checkpoints y predicciones generadas por los modelos.
 - **images/**: Figuras y esquemas utilizados en los notebooks e informe.
