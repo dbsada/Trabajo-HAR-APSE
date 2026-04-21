@@ -1,20 +1,10 @@
 # Reconocimiento de Actividades con Acelerómetro
 
-> 🥇 Proyecto ganador de la competición de APSE
+> 🥇 Proyecto ganador de la competición de APSE.
 
 Este proyecto es un trabajo de la asignatura **Aplicaciones Sectoriales (APSE)** que aborda la clasificación automática de actividades físicas a partir de señales inerciales registradas con un acelerómetro triaxial. El objetivo es comparar distintos enfoques de modelado, desde métodos clásicos hasta arquitecturas profundas, evaluando su capacidad para generalizar a sujetos no vistos durante el entrenamiento.
 
 ## Estructura del proyecto
-
-> [!Warning]
-> Durante la realización de la práctica se interpretó erróneamente que el eje Z representaba la altura. Sin embargo, era el eje Y el que tenía este significado. Esto afecta al modelo [cnn.ipynb](cnn.ipynb) y, para solucionarlo, se debe modificar la función `get_height_signal_z_only` ubicada en el notebook:
-> ```
-> h_z = get_height_signal_z_only(z, fs)
-> # cambiar por:
-> h_y = get_height_signal_y_only(y, fs)
-> ```
-> Este cambio no se ha implementado, ya que requeriría modificaciones en múltiples partes del código y el informe, y el proyecto se ha considerado finalizado en su estado actual.
-
 - **data/**: Contiene los archivos `train.csv` y `test.csv` con los datos originales.
 - **artifacts/**: Pesos, checkpoints y predicciones generadas por los modelos.
 - **images/**: Figuras y esquemas utilizados en los notebooks e informe.
@@ -26,7 +16,7 @@ Este proyecto es un trabajo de la asignatura **Aplicaciones Sectoriales (APSE)**
 - **[rf.ipynb](rf.ipynb)**: Notebook para el modelo Random Forest.
 - **[cnn1d.ipynb](cnn1d.ipynb)**: Notebook para el modelo CNN 1D y CNN 1D + LSTM.
 - **[transformer.ipynb](transformer.ipynb)**: Notebook para el modelo Transformer.
-- **[cnn.ipynb](cnn.ipynb)**: Notebook para el modelo CNN dual-stream.
+- **[cnn.ipynb](cnn.ipynb)**: Notebook para el modelo CNN dual-stream [^1].
 - **[global_metrics.ipynb](global_metrics.ipynb)**: Notebook para el análisis de métricas globales y comparación de modelos.
 
 ## Uso de los notebooks
@@ -53,3 +43,5 @@ pip install -r requirements.txt
 
 ## Autores
 Antonio Álvarez, Diego Besada, Natalia Corchón y Alfonso Jimena 
+
+[^1]: Durante la realización de la práctica se interpretó erróneamente que el eje Z representaba la altura. Sin embargo, era el eje Y el que tenía este significado. Esto afecta al modelo [cnn.ipynb](cnn.ipynb) y, para solucionarlo, se debe modificar la función `get_height_signal_z_only` ubicada en el notebook. Este cambio no se ha implementado, ya que requeriría modificaciones en múltiples partes del código y el informe, y el proyecto se ha considerado finalizado en su estado actual.
